@@ -3,12 +3,38 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css"> 
   <title>Even-or-Odd Guess (0–1000)</title>
 
 </head>
 <body>
-  <main class="container">
+  <div class="container">
+    <h1>Guess the Number!</h1>
+    <div class="game-area">
+      <div class="game-controls">
+        <p>Guess a number between 0 and 1000:</p>
+        <input type="number" id="guessInput" min="0" max="1000">
+        <button id="submitGuess">Guess</button>
+        <button id="quitGame">Quit</button>
+        <p id="message"></p>
+        <p id="attemptsLeft"></p>
+      </div>
+    </div>
+    <div class="stats-area">
+      <div class="stats-box" id="playerStats">
+        <h2>Player Stats</h2>
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
+        <p>Current Streak: <span id="currentStreak">0</span></p>
+      </div>
+      <div class="stats-box" id="gameStats">
+        <h2>Game Stats</h2>
+        <p>Total Games: <span id="totalGames">0</span></p>
+        <p>Highest Streak: <span id="highestStreak">0</span></p>
+      </div>
+    </div>
 
-  </main>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
